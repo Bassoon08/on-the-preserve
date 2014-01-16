@@ -1,0 +1,103 @@
+node::start:: You are about to start your life in a Tlic Preserve. Please choose if you want to be a 'Terran' or a 'Tlic'. (Please type 'help' at any time for more information)
+
+edge::start::terran::house::None
+edge::start::tlic::decision::None
+
+
+node::decision:: As a Tlic, you must search for a family to live with who will host your young. Do you want to 'search' for a family now, or do you feel that it is wrong to use Terran, and you want to find an 'achti' for implantation instead?
+
+edge::decision::achti::outside::None
+edge::decision::search::family::None
+
+
+node::family:: You talk with some other Tlic, and they direct you to a home that does not have its own Tlic. You knock on the door and start talking with the family. You ask if you can live with them and have a child to host your young. The family immediately refuses. Do you get angry and 'force' your way into the home to implant your young, or do you 'reason' with them to try to convince them otherwise?
+
+edge::family::force::forceful::None
+edge::family::reason::peaceful::None
+
+node::forceful:: You barge into their home and demand to live there. You then take one of the sons and you implant your young into him without permission. The family is very upset, but at this point, there's nothing they can do to stop you. You continue living their, and your young have a promising future inside the new host. Amongst the Tlic you hear a rumor of a Terran rebellion. They are angry about you forcibly using their children as hosts! The Terran get together and all leave the Preserve, meaning the Tlic have no possible hosts for their young. The Tlic species eventually dies out. NO REPRODUCTION GAME OVER
+
+node::peaceful:: You continue talking with the family. You explain that you can offer them protection from the dangers of the Preserve, and you can also care for them by providing them with food and transportation. The family realizes that it's best for them to let you live in their home. Eventually you use their son as a host, and your young are born with no complications. SUCCESSFUL REPRODUCTION GAME OVER
+
+
+node::outside:: You look around outside for an achti to use as a host animal for your eggs. You are prepared to pounce on it and implant your eggs. Do you 'implant' the eggs, or do you decide that using a host for your young is 'wrong'?
+
+edge::outside::implant::implantation::None
+edge::outside::wrong::nofuture::None
+
+node::wrong:: You let the achti go because you don't want to use a host for your young. Since you have decided not to use Terran as hosts, there is no way to reproduce. You eventually die, and you have no offspring. NO REPRODUCTION GAME OVER
+
+node::implantation:: You grab hold of the achti and implant your eggs. You then take the achti with you to make sure your young will be safe. In short time you realize that the achti has killed the eggs you implanted. You learn that all animals you find will eventually kill your implanted eggs. Because you chose not to use Terran as host, there is not way to reproduce. You eventually die, and you have no offering. NO REPRODUCTION GAME OVER
+
+
+
+
+
+node::house:: This is your first day in the Preserve with your family. A Tlic comes to your house asking to live with you, with hopes that one of your children will eventually host her young. Do you 'accept' her or 'deny' her?
+
+
+edge::house::accept::child::None
+edge::house::deny::food::None
+
+
+node::child:: A Tlic now lives in your house. But beware of the dangers that come with coexisting peacefully. Your Tlic needs one of your children to bear her young. Will you let her 'implant' her young in your child or do you 'decline'?
+
+edge::child::implant::dies::None
+edge::child::decline::angry::None
+
+node::angry:: Your Tlic is angry that you will not let her use Michael as a host. She goes behind your back and implants her young into your daughter Amy without your permission. When the time comes to remove the larvae, all goes well with her young, but something goes wrong in the procedure. Your Tlic tells you that Amy now will not be able to have children of her own. Although you and Amy are both devastated, the Tlic continues to live in your home, and you carry on the best you can. YOU SURVIVE GAME OVER
+
+node::dies:: Your Tlic implants your son Michael. Everything is going well until it's time to take the larvae out. During the procedure, the larvae eat Michael's insides, and he dies. After a period of mourning, your Tlic asks to implant your other son John. Do you give her 'permission' or do you 'refuse'?
+
+edge::dies::permission::john::None
+edge::dies::refuse::anyway::None
+
+node::john:: You let the Tlic implant her young into your son John. When the time comes, the young are removed successfully. Although John is fine, you still remember Michael and how the procedure killed him. You cannot trust your Tlic, and you do not feel safe with her living in your home. But you carrying on the best you can. YOU SURVIVE GAME OVER
+
+node::anyway:: You tell your Tlic that she cannot implant her young into John. She get mad and decides to go against your wishes and do it anyway. John hosts the young, and when they are eventually removed, he turns out just fine. You feel like you cannot trust your Tlic, but you continue living with her because you know that you have no real choice. YOU SURVIVE GAME OVER
+
+
+
+
+node::food:: The Tlic has left, but she is not happy. You realize you have no way of getting food now because only Tlics have access to cars. Do you want to play it safe and 'grow' your own food or 'venture' out into the woods?
+
+edge::food::grow::shed::None
+edge::food::venture::woods::None
+
+node::shed:: You head out into the shed to get tools for planting food. You have a choice to plant 'corn' or 'tomatoes'. 
+
+edge::shed::corn::rain::None
+edge::shed::tomatoes::field::None
+
+node::rain:: You spend the day planting your corn. As you wait patiently for it to grow, your family eats all the other food you have stored. Just as you run out of food, a massive rain storm hits and ruins your crop. Your family does not have enough to eat! If only you had a Tlic to help you get food. YOU DIE GAME OVER
+
+node::field:: You go into your field to start planting the tomatoes. You should ask your 'son' to help you with the planting.
+
+edge::field::son::plant::None
+
+node::plant:: Your son arrives and helps you with your crop. He reminds you that there are achti out here that may want to eat the tomatoes, but you do not build a fence. You wait for the tomatoes to grow, and before you get a chance to pick them, the achti come and eat them all. Your family does not have enough to eat now! It's too bad you don't have a Tlic to help you get food. YOU DIE GAME OVER
+
+node::woods:: You grab your gun that's hidden in the cabinet, and you make your way out into the woods. It's looking pretty dark. Should you trek 'deeper' into the woods to look for meat or stay 'close' and look for berries?
+
+edge::woods::deeper::achti::None
+edge::woods::close::berries::None
+
+node::berries:: You stay around the outskirts of the woods, but it's still very dark. You manage to see a bush with what looks like some very nice berries. Go 'forward' to the bush to pick these berries.
+
+edge::berries::forward::root::None
+
+node::root:: As you walk towards the bush, you trip over a tree root because you can't see. As you fall, you roll down a hill and land in a river! From the injuries you sustained from your fall, you can't swim and save yourself. It's too bad you didn't have a Tlic, since they can see so well in the dark. YOU DIE GAME OVER
+
+node::achti:: As you walk deeper into the woods, you see an achti eating some grass. You should 'crouch' down behind a bush so you can shoot it without being seen.
+
+edge::achti::crouch::wolf::None
+
+node::wolf:: You set up your gun and get ready to shoot. You hear a growling sound from behind you. Oh no! It's a pack of wolves! Do you want to try and 'run' away from them or use your gun to 'shoot' at them?
+
+edge::wolf::run::eaten::None
+edge::wolf::shoot::cant::None
+
+node::eaten:: You drop your gun and start running as fast as you can in the opposite direction. You can hear the wolves chasing you! You only make it a few yards before the wolves attack you. If only you had a Tlic to protect you. YOU DIE GAME OVER
+
+node::cant:: You turn towards the wolves and start shooting. It's so dark that you can barely see them, so you end up missing the wolves. They hear you shooting and run towards you, pouncing on you to attack. Too bad you didn't have a Tlic to protect you. YOU DIE GAME OVER
+
